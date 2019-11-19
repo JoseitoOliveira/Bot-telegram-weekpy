@@ -1,4 +1,5 @@
 import re
+import os
 import shelve
 from pprint import pprint
 from time import sleep
