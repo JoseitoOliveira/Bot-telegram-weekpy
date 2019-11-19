@@ -10,7 +10,7 @@ from telepot.loop import MessageLoop
 
 from cursos import cadastrar_cursos
 
-TOKEN = '1017458223:AAF71kxyuMKjVxq39NzYjSMoKOnjZ1w5cOE'
+TOKEN = 'SEU_TOKEN_AQUI'
 
 email_bot = yagmail.SMTP(input('Email: '), input('Senha: '))
 
