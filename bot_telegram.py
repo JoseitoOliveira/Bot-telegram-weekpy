@@ -8,14 +8,13 @@ import random
 import telepot
 import yagmail
 from telepot.loop import MessageLoop
-from boto.s3.connection import S3Connection
 
 from cursos import cadastrar_cursos
 
 
-TOKEN = S3Connection(os.environ['TOKEN'], os.environ['S3_SECRET'])
-email = S3Connection(os.environ['EMAIL'], os.environ['S3_SECRET'])
-password = S3Connection(os.environ['PASS'], os.environ['S3_SECRET']) 
+TOKEN = os.environ['TOKEN']
+email = os.environ['EMAIL']
+password = os.environ['PASS']
 
 email_bot = yagmail.SMTP(email, password)
 
